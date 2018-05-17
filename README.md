@@ -16,13 +16,16 @@ This package is an extension for ***ggplot2*** package (in the same manner as pa
 ![](media/batlight_plot.png?raw=true "Title")
 
 ## File Legend<a name="files"></a>
+**batlight.plot_poc_v1.R**: POC R script    
+**batlight.Rmd**: POC R Markdown (Rmd) file    
+**batlight.nb.html**: rendered POC Rmd file, i.e. R Notebook    
 
 ## Daily Logs<a name="logs"></a>
 ### 05/16/2018
 * Repository created
 
 ## R Notebooks<a name="rnote"></a>
-1. [Batlight Plot POC](http://htmlpreview.github.com/?https://github.com/sargdavid/snippets.cvi/blob/master/rnotebook/ggplot_errorbar_barplot.nb.html)    
+1. [Batlight Plot POC](http://htmlpreview.github.com/?https://github.com/CVIRU/batlight.plot/blob/master/source/batlight.nb.html)    
 
 ## References<a name="ref"></a>
 1. [Announcing ggforce: Accelerating ggplot2](https://www.r-bloggers.com/announcing-ggforce-accelerating-ggplot2/)    
