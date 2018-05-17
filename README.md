@@ -13,7 +13,7 @@
 
 ## Introduction<a name="intro"></a>
 This package is an extension for ***ggplot2*** package (in the same manner as pacakge ***ggforce***, see reference #1 below) to add magnification to the plot.    
-![](media/batlight_plot.png?raw=true "Title")
+![](media/batlight_plot.png?raw=true "Title")   
 
 ## File Legend<a name="files"></a>
 **batlight.plot_poc_v1.R**: POC R script    
