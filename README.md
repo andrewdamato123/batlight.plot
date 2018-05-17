@@ -1,2 +1,32 @@
-# batlight.plot
-Extension for ggplot2 to add magnification to the plot.
+## Batlight Plot
+### Author(s): Davit Sargsyan, Traymon Beavers, ...
+### Created: 05/16/2018
+
+---
+
+## Table of Contents
+[Introduction](#intro)     
+[File Legend](#files)       
+[Daily Logs](#logs)     
+[R Notebooks](#rnote)     
+[References](#ref)     
+
+## Introduction<a name="intro"></a>
+This package is an extension for ***ggplot2*** package (in the same manner as pacakge ***ggforce***, see reference #1 below) to add magnification to the plot.    
+![](media/batlight_plot.png?raw=true "Title")
+
+## File Legend<a name="files"></a>
+
+## Daily Logs<a name="logs"></a>
+### 05/16/2018
+* Repository created
+
+## R Notebooks<a name="rnote"></a>
+1. [Batlight Plot POC](http://htmlpreview.github.com/?https://github.com/sargdavid/snippets.cvi/blob/master/rnotebook/ggplot_errorbar_barplot.nb.html)    
+
+## References<a name="ref"></a>
+1. [Announcing ggforce: Accelerating ggplot2](https://www.r-bloggers.com/announcing-ggforce-accelerating-ggplot2/)    
+
+# Thank You!
+![](media/bat_signal.png?raw=true "Title")    
+[Image Source: Jimmy Carter and the Bat Christians](http://corbiniansbear.blogspot.com/2014/04/jimmy-carter-and-bat-christians.html)
