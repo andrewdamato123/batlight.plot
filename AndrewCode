@@ -1,0 +1,42 @@
+geom_magnify <- function(x,y,x0,y0,r) {
+  dt1<-data.frame(x=x, y=y,x0=x0,y0=y0,r=r)
+  
+### Starting Point ###
+layer(geom="point",data =dt1, mapping = aes(x=x,y=y), stat = "identity", position = "identity") 
+
+### Circle ###
+layer(geom = GeomCircle,  data = dt1, mapping = aes(x0=x0, y0=y0, r= r),    stat = "circle", position = "identity" )
+
+### Left Segment ###
+layer(geom = GeomSegment, data = dt1, mapping = aes(x=x,y=y,xend=x0-r,yend=y0), stat = "identity", position = "identity" )
+
+### Right Segment ###
+layer(geom = GeomSegment, data = dt1, mapping = aes(x=x,y=y,xend=x0+r,yend=y0), stat = "identity", position = "identity" )
+
+### Horizontal Segment ###
+layer(geom = GeomSegment, data = dt1, mapping = aes(x=x0-r,y=y0,xend=x0+r,yend=y0), stat = "identity", position = "identity" )
+
+### Vertical Segment ###
+layer(geom = GeomSegment, data = dt1, mapping = aes(x=x0,y=y0-r,xend=x0,yend=y0+r), stat = "identity", position = "identity" )
+}
+
+
+
+### example ###
+ggplot() + geom_magnify(x = 2, y = 3, x0 = 4, y0 = 2, r=0.5)
+
+
+#Issues:
+
+#  Each Layer function replaces (or possibly lays over) 
+#  the previous one so only the last layer line shows when the function is called)
+#  I tried adding plus signs at the end of each layer line, but that gives an error
+
+#  Not sure where I can adjust the line type to make lines dashed. 
+#  I tried adding it to the aesthetics, using the same variable 
+#  names as found in the source code for ggplot2/ggforce, but it gives an error
+
+#  The math required to find the lines tangent to the circle is very complex
+#  Given a specific starting point of the batlight and position and radius of the circle, 
+#  I can figure out the equation of the tangent line with a pen and paper, 
+#  but I don't know how to code the function to figure it out on its own. 
